@@ -1,0 +1,25 @@
+<%- include('partials/header.ejs', {path: path, pageTitle: pageTitle}) %>
+
+
+    <main>
+        <div class="users-wrapper">
+
+            <% if(users.length > 0) { %>
+                <h3> List of Users:</h3>
+                <ul>
+                <% for(user of users) { %>
+                        <li><%= user.name %></li>
+                <% } %>
+                </ul>
+            <% } else {%>
+
+                <h3> No User Found</h3>
+
+            <% } %>
+
+        </div>
+
+    </main>
+
+
+<%- include('partials/footer.ejs') %>

@@ -1,0 +1,22 @@
+<%- include('partials/header.ejs', {path: path, pageTitle: pageTitle}) %>
+
+<main>
+    <div class="form-wrapper">
+        <form action="/add-user" method="post">
+            <div class="form-group text-input">
+                <label for="username">User Name:</label>
+                <input type="text" name="username" id="username" placeholder="add user name">
+            </div>
+
+            <div class="form-group">
+                <button type="submit" class="btn">submit</button>
+            </div>
+
+        </form>
+
+    </div>
+
+</main>
+
+
+<%- include('partials/footer.ejs') %>
